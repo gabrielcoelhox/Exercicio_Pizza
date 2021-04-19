@@ -44,6 +44,8 @@ pizzaJson.map((item, index)=>{
 
 // Eventos do MODAL
 
+
+// Botão Cancelar
 function closeModal(){
     c('.pizzaWindowArea').style.opacity = 0;
     setTimeout(() => {
@@ -53,4 +55,23 @@ function closeModal(){
 cs('.pizzaInfo--cancelButton, .pizzaInfo--cancelMobileButton').forEach((item)=>{
     item.addEventListener('click', closeModal);
 });
-    
+
+// Botões de - e +
+c('.pizzaInfo--qtmenos').addEventListener('click', () => {
+    if(modalQT > 1){
+        modalQT--;
+        c('.pizzaInfo--qt').innerHTML = modalQT;
+    }
+});
+c('.pizzaInfo--qtmais').addEventListener('click', () => {
+    modalQT++;
+    c('.pizzaInfo--qt').innerHTML = modalQT;
+});
+
+// Selecionar o tamanho da Pizza
+cs('.pizzaInfo--size').forEach((size, sizeIndex)=>{
+    size.addEventListener('click', () => {
+        c('.pizzaInfo--size.selected').classList.remove('selected');
+        size.classList.add('selected');
+    })
+});
