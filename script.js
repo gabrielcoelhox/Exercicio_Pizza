@@ -80,4 +80,6 @@ cs('.pizzaInfo--size').forEach((size, sizeIndex)=>{
 
 c('.pizzaInfo--addButton').addEventListener('click', () => {
     console.log("Pizza: " +modalKey); // Qual a pizza?
+    let size = c('.pizzaInfo--size.selected').getAttribute('data-key');
+    console.log("Tamanho: "+size); // Qual o tamanho?
 });
