@@ -79,7 +79,13 @@ cs('.pizzaInfo--size').forEach((size, sizeIndex)=>{
 // Carrinho de compras
 
 c('.pizzaInfo--addButton').addEventListener('click', () => {
-    console.log("Pizza: " +modalKey); // Qual a pizza?
-    let size = c('.pizzaInfo--size.selected').getAttribute('data-key');
-    console.log("Tamanho: "+size); // Qual o tamanho?
+    let size = parseInt(c('.pizzaInfo--size.selected').getAttribute('data-key'));
+
+    cart.push({
+        id:pizzaJson[modalKey].id,
+        size,
+        quantidade:modalQT
+    });
+
+    closeModal();
 });
