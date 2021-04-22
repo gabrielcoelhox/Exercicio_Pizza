@@ -41,6 +41,13 @@ header {
     font-size: 30px;
 }
 
+.success {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 aside {
     background-color:#9ccbe6;
     width:0vw;
@@ -330,6 +337,11 @@ h1 {
 }
 .cart--finalizar:hover {
     background-color:#35af4a;
+}
+
+.successImg {
+	width: 80px !important;
+	height: auto !important;
 }
 
 @media (max-width:1000px) {

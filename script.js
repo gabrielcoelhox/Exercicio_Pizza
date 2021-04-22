@@ -170,5 +170,23 @@ function updateCart() {
         c('aside').classList.remove('show');
         c('aside').style.left = '100vw';
     }
-
 }
+
+c(".cart--finalizar").addEventListener("click", () => {
+    cart = [];
+    updateCart();
+    closeModal();
+    c(".success.pizzaWindowArea").style.opacity = 0;
+    c(".success.pizzaWindowArea").style.display = "flex";
+    setTimeout(() => {
+        c(".success.pizzaWindowArea").style.opacity = 1;
+    }, 200);
+    c(".success.pizzaWindowArea").style.display = "flex";
+
+    setTimeout(() => {
+        c(".success.pizzaWindowArea").style.opacity = 0;
+        setTimeout(() => {
+            c(".success.pizzaWindowArea").style.display = "none";
+        }, 200);
+    }, 3000);
+});
