@@ -14,3 +14,9 @@ https://gabrielcoelhox.github.io/Exercicio_Instagram/
 
 ![GIF](github/animacao.gif)
 ![MObile GIF](github/mobile.gif)
+
+## Tecnologias Utilizadas
+
+- JavaScript;
+- HTML5;
+- CSS3.
