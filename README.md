@@ -1,4 +1,4 @@
-:computer: Atualizado em 27 de Abril de 2021 :computer:
+:computer: Atualizado em 31 de Maio de 2021 :computer:
 
 # Projeto Digital - Criando um site de vendas de Pizza
 
@@ -8,7 +8,7 @@ Este projeto tem como objetivo construir uma página no qual será abordado os c
 
 ## Link
 
-https://gabrielcoelhox.github.io/Exercicio_Instagram/
+https://gabrielcoelhox.github.io/Exercicio_Pizza/
 
 ## :camera: Veja:
 
